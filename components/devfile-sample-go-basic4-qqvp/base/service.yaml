@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-go-basic4-qqvp
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-go-basic4-qqvp
+    app.kubernetes.io/part-of: my-app-1-forked
+  name: devfile-sample-go-basic4-qqvp
+  namespace: mreid1-tenant
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: devfile-sample-go-basic4-qqvp
+status:
+  loadBalancer: {}
