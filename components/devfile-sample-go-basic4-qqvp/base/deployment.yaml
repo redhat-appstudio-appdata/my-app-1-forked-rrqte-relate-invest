@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic4-qqvp
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:rrqte-devfile-sample-go-basic4-qqvp
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6f1cbeaa73eb38511dd21141703e7eb052bb67295ba9e630f2a6816c9bf95d59
         name: my-go
         ports:
         - containerPort: 8081
